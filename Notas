@@ -12,7 +12,7 @@ git config --global user.email "eavinuezaz1@uce.edu.ec"
 
 
 git add -A
-git commit -m "Clase "
+git commit -m "Cexamen"
 git push -u origin main
 
 
@@ -28,3 +28,82 @@ b5386-2247b
 ea3c9-13050
 
 git config --list
+
+
+COntruir un servicio REST con Rag + memoria6 tools que cargue automaticamente el pdf con la normativa de la univerdad dede classpath,
+responda preguntas utilizando informacion cotextual, mantenga el context conversacional exponga herramientas e incluya un cliente de consila que consuma el servicio
+
+
+requisitos funcionales
+carga automatica
+registrar un bean commandlinerunner que al arrancar lea un archivo pdf, divida en fragmentos de 300 tokens, genere embedding y los guarde en una base de datos vectoria (coolection= ayua_universitaria
+
+POSt /api/consulta
+{messaje: "..."} -> aplication/jsoncon{"respuesya:"..., fuentes:{}, "confianza:"alta2}
+{respuesta:"..."},
+"fuentes":
+{
+"fragmento 1": "...",
+"fragmento 2": "..."
+}
+confianza:...
+}
+
+
+
+Reglas del system promot
+Asistente universitario experto en reglamente académico. Responde solo con ´{reglamento}´.
+Si no hay respuesta respuesta: "no tengo la suficiente informacion para responder la pregunta
+Incluye nivel de confianza (alta/media/aja)"
+
+memoria
+implementar el manejo de memooira utilizando el modelo in memory mendiante un adviso para mantener el cntexto de la conversacion
+
+tool
+
+definir herramientas(s) que permitan consultar os requisitos de tutilacion segun la modalidad informada por el usuario
+
+cliente consola
+crearun un cleinte consla cliente consola con el metod main(permita interacturar con el servidor
+java.net.httlcliente ->POST A HTTO://LOCALHOST:809097APU CONSULTAR
+bUCLE QU LEA EL TEXTO POR EL USUARO LO ENVIE AL SERVIDOR Y MUESTRE AL RESPUESTA
+MOSTRAR LA RESPUESTA Y CONFANZA RECIBIDODAR T
+TERMINAR CUANDO EL USUARO ESCRIBA SALIR)
+
+JAVA 25
+SIPIGNBOO 4.1.
+Adrant como base ventoria spring*boot*docker/compsoe
+excliur ai.djs.pytorch
+
+entregables
+proyecy
+docker-compse*ynml
+evidencia txt con
+
+ pruebas
+ *pregunta respondida con pdf + too invicada
+ *segimiento conversacional memoria >=
+ preguntas fuera de dominio no tengo sufuciente informacion
+ captura qquadra mostrando la coleccuon ayuda_universitaria
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
